@@ -1,0 +1,96 @@
+/* 도 */
+.keyboardC {
+    border-left: .3vw solid #000;
+}
+/* 도 샾 */
+.keyboardCS {
+    left: 3.85vw;
+}
+
+/* 레 */
+.keyboardD {
+}
+/* 레 샾 */
+.keyboardDS {
+    left: 8.85vw;
+}
+
+/* 미 */
+.keyboardE {
+    border-right: .15vw solid #000;
+}
+
+/* 파 */
+.keyboardF {
+    border-left: .15vw solid #000;
+}
+/* 파 샾 */
+.keyboardFS {
+    right: 13.85vw;
+}
+/* 솔 */
+.keyboardG {
+
+}
+
+/* 솔 샾 */
+.keyboardGS {
+    right: 8.85vw;
+}
+
+/* 라 */
+.keyboardA {
+
+}
+/* 라 샾*/
+.keyboardAS {
+    right: 3.85vw;
+}
+
+/* 시 */
+.keyboardB {
+}
+
+.keyboard {
+    width: 6vw;
+    background-color: #ffffff;
+    height: 20vw;
+    border-bottom: .3vw solid #000;
+}
+.keyboardS {
+    width: 3vw;
+    background-color: #000;
+    height: 15.5vw;
+    position: absolute;
+}
+
+.spline {
+    background-color: #000;
+    width: .3vw;
+    height: 4.5vw;
+    margin-left: 1.35vw;
+    margin-top: 15.5vw;
+}
+.octave {
+    border-top: .3vw solid #000;
+    /* border-bottom: .3vw solid #000; */
+    display: flex;
+    position: relative;
+    width: 36vw;
+    }
+
+.piano {
+    display: flex;
+    /* align-items: center; */
+}
+.rightLine {
+    border-right: .3vw solid #000;
+}
+
+.keyboard:active {
+    border-top:1px solid #777;
+    /* border-left:0.3vw solid #999; */
+    border-bottom:1px solid #999;
+    box-shadow:2px 0 0px rgba(0,0,0,0.1) inset,-5px 5px 20px rgba(0,0,0,0.2) inset,0 0 3px rgba(0,0,0,0.2);
+    background:linear-gradient(to bottom,#fff 0%,#e9e9e9 100%)
+  }
