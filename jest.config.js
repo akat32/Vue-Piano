@@ -1,18 +1,22 @@
 module.exports = {
-    moduleFileExtensions: ["js", "json", "jsx", "ts", "tsx", "json"],
+    verbose: true,
+    moduleFileExtensions: ["js", "json", "jsx", "ts", "tsx", "json", "vue", "html"],
     transform: {
-        '^.+\\.(js|jsx)?$': 'babel-jest',
-        "^.+\\.(ts|tsx)$": "ts-jest"
+        '^.+\\.(js|jsx)?$': '<rootDir>/node_modules/babel-jest',
+        "^.+\\.(ts|tsx)$": "ts-jest",
+        ".*\\.(vue)$": "vue-jest"
+
     },
     testEnvironment: 'node',
     moduleNameMapper: {
         '^@/(.*)$': '<rootDir>/$1'
+
     },
     testMatch: [
         "**/__tests__/**/*.+(ts|tsx|js)",
         "**/?(*.)+(spec|test).+(ts|tsx|js)"
-      ],
-      
-    transformIgnorePatterns: ['<rootDir>/node_modules/']
+      ],      
+    transformIgnorePatterns: ['/node_modules/(?!vue-loading-spinner)'],
+    modulePaths: ["<rootDir>"]
 }
 
