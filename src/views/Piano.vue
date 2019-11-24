@@ -1,5 +1,5 @@
 <template>
-  <div class="piano">
+  <div class="piano" data-test="piano-div">
     <octave octave = "1"/>
     <octave octave = "2"/>
     <div class="rightLine"/>
