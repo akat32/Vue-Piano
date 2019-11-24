@@ -30,6 +30,8 @@
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^24.9.0",
     "jest": "^24.9.0",
+    "jsdom": "^15.2.1",
+    "jsdom-global": "^3.0.2",
     "ts-jest": "^24.2.0",
     "typescript": "~3.5.3",
     "vue-jest": "^3.0.5",

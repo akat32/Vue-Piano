@@ -7,6 +7,7 @@ module.exports = {
         ".*\\.(vue)$": "vue-jest"
 
     },
+    testURL: "http://localhost",
     testEnvironment: 'node',
     moduleNameMapper: {
         '^@/(.*)$': '<rootDir>/$1'
@@ -17,6 +18,9 @@ module.exports = {
         "**/?(*.)+(spec|test).+(ts|tsx|js)"
       ],      
     transformIgnorePatterns: ['/node_modules/(?!vue-loading-spinner)'],
-    modulePaths: ["<rootDir>"]
+    modulePaths: ["<rootDir>"],
+    globals: {
+        window: {}
+    }
 }
 
