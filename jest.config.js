@@ -19,8 +19,8 @@ module.exports = {
       ],      
     transformIgnorePatterns: ['/node_modules/(?!vue-loading-spinner)'],
     modulePaths: ["<rootDir>"],
-    globals: {
-        window: {}
-    }
+    // globals: {
+    //     window: { navigator: {}},
+    // }
 }
 

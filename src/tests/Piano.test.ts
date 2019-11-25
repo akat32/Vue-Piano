@@ -1,7 +1,6 @@
-// "use strict";
+"use strict";
 import { shallowMount } from "@vue/test-utils";
 import Piano from "src/views/Piano.vue";
-import octave from "../views/octave.vue";
 
 describe("Piano", () => {
   test("should render content correctly", () => {
